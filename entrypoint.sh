@@ -6,6 +6,6 @@ git remote set-url origin https://x-access-token:$GITHUB_TOKEN@github.com/$GITHU
 npm config set _auth $NPM_AUTH_TOKEN
 npm config set https-proxy $NPM_PROXY_SERVER
 
-lerna publish --conventional-commits --cd-version=$LERNA_LEVEL --yes
+lerna publish --conventional-commits --yes
 
 git push && git push --tags

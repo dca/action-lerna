@@ -1,6 +1,8 @@
 # Container image that runs your code
 FROM node:lts-alpine
 
+RUN apk add --no-cache git
+
 RUN npm install -g lerna
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
